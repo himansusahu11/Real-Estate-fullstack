@@ -1,0 +1,61 @@
+.headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 338px;
+  height: 260px; /* Added px for proper height unit */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+  transition: box-shadow 0.3s, color 0.3s;
+}
+
+.s-icon {
+  display: flex;
+  align-items: center;
+  border: 4px double grey;
+  padding: 8px;
+  color: orange;
+  font-size: 2.5rem;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.services-card h5 {
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.services-card p {
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.services-card:hover {
+  background-color: orange;
+}
+
+.services-card:hover h5,
+.services-card:hover p,
+.services-card:hover .s-icon {
+  color: white;
+}
+
+.services-card:hover .s-icon {
+  border-color: white;
+}

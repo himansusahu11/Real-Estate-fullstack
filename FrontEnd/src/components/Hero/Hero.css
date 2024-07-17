@@ -1,0 +1,145 @@
+.hero-section {
+  height: 100vh;
+  max-height: 1100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.prev-arrow,
+.next-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  background: #000d1a;
+  border-radius: 50px;
+  padding: 10px;
+  margin-right: 1rem;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  background: #cd853f;
+  transform: scale(1.05);
+}
+
+.slider-btn {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  z-index: 10;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: 2; /* Ensure the overlay is above the image but below the content */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Ensure the image is below the overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  width: calc(100% - 100px);
+  color: #fff;
+  text-align: center; /* Center align the text */
+}
+
+.hero-content h1 {
+  color: #ece5e2;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 2;
+  font-family: serif;
+  text-align: center;
+}
+.hero-content p {
+  color: #ece5e2;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+.from-left {
+  animation: slideFromLeft 1s ease forwards;
+}
+
+.from-right {
+  animation: slideFromRight 1s ease forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

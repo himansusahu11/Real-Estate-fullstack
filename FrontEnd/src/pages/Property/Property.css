@@ -1,0 +1,63 @@
+.property-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+.property-container .like {
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+  cursor: pointer;
+}
+.property-container > img {
+  margin-top: 80px;
+  align-self: center;
+  max-height: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.property-details {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+.property-details > div {
+  display: flex;
+  flex: 1;
+  gap: 1.5rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.facilities {
+  gap: 1rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+.facility {
+  gap: 0.5rem;
+}
+.property-details .button {
+  width: 100%;
+  margin-top: 1rem;
+}
+.property-details .button:hover {
+  transform: scale(1.05);
+}

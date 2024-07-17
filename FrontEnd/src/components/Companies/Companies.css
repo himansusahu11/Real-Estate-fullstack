@@ -1,0 +1,13 @@
+.c-wrapper {
+  margin-top: 2rem;
+}
+.c-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.c-container img {
+  width: 9rem;
+}
