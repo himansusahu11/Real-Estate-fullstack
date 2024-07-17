@@ -60,10 +60,8 @@ const Hero = ({ slides }) => {
                   <div className="hero-content" data-aos="fade-up">
                     {index === 0 && (
                       <>
-                        <h1 className="from-left">
-                          Tropical Winds Resort Hotel
-                        </h1>
-                        <p className="from-right">
+                        <h1>Tropical Winds Resort Hotel</h1>
+                        <p>
                           This Daytona Beach hotel is situated on the <br />
                           Atlantic coast and offers direct beach access.
                           <br /> It boasts a heated indoor and outdoor pool, and
@@ -98,10 +96,10 @@ const Hero = ({ slides }) => {
                     )}
                     {index === 3 && (
                       <>
-                        <h1 className="from-left">
+                        <h1>
                           RECONNECT WITH <br /> NATURE
                         </h1>
-                        <p className="from-right">
+                        <p>
                           An hour and a half drive from Ngurah Rai International
                           <br />
                           Airport is all it takes to get you to this holiday
